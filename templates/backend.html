@@ -21,11 +21,7 @@
         <h2 style="color:#1518c7">Match found</h2>
     <b>    
         Total no of string matches is :{{count}} <br><br>
-         match:{{match}} <br><br>
-     
-         {% for i in range(count) %}
-         Match-{{i+1}}, of {{r}} at Start Index: {{match[i][0]}} and End Index :{{match[i][1]}} <br>
-         {% endfor %}
+
      {% else %}
          <h2>Match not found</h2>
      {% endif %}
