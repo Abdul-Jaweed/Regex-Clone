@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regex101</title>
+</head>
+
+<body bgcolor="white">
+ 
+    <center>
+
+    <h1 style="color: blue">Regex Clone</h1> 
+    <p><b>Input Details: <br><br>
+       Regex:{{r}}  <br><br>
+       String:{{s}}
+    </b>
+    </p>
+    {% if match|length %}
+        <h2 style="color:#1518c7">Match found</h2>
+    <b>    
+        Total no of string matches is :{{count}} <br><br>
+         match:{{match}} <br><br>
+     
+         {% for i in range(count) %}
+         Match-{{i+1}}, of {{r}} at Start Index: {{match[i][0]}} and End Index :{{match[i][1]}} <br>
+         {% endfor %}
+     {% else %}
+         <h2>Match not found</h2>
+     {% endif %}
+    </b>
+
+</body>
+</html>

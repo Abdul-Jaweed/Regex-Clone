@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regex101</title>
+</head>
+<body bgcolor="white">
+   
+    <center>
+    <h1 style="color: rgba(218, 20, 20, 0.918)">Regex Clone</h1>
+
+
+    <form action="{{url_for('index_func')}}" method='post'>
+        <label style="font-size:25px;">Regex</label>
+        <input type="text" name="in_1" placeholder="Enter the Regex Expression"> 
+        <br> 
+        <br>
+        <label style="font-size:25px;">String</label>
+        <input type="text" name="in_2" placeholder="Enter the String"> 
+        <br />
+        <br>
+        <button style="background-color:rgb(238, 238, 238)", type="submit" class="button">Enter</button>
+    </form>
+
+    
+</body>
+</html>
